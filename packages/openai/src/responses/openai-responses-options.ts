@@ -291,7 +291,7 @@ export const openaiResponsesProviderOptionsSchema = lazySchema(() =>
        *
        * If not specified, the mode is automatically determined based on the model.
        */
-      systemMessageMode: z.enum(['system', 'developer', 'remove']).nullish(),
+      systemMessageMode: z.enum(['system', 'developer', 'remove']).optional(),
     }),
   ),
 );
